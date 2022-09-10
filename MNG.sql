@@ -1,0 +1,18 @@
+CREATE DATABASE MNG
+GO
+USE MNG
+GO
+CREATE TABLE student(
+    id VARCHAR(10) PRIMARY KEY,
+    Hoten NVARCHAR(50) NOT NULL,
+    Birthday DATE CHECK (Birthday < getdate()),
+    Gender VARCHAR(3) NOT NULL,
+    Ethnic VARCHAR(10) NOT NULL,
+    Email VARCHAR(30) NOT NULL,
+    Cccd VARCHAR(40) NOT NULL,
+    Addres VARCHAR(50) NOT NULL,
+    Phone VARCHAR(15) NOT NULL
+)
+
+SELECT * FROM student
+SELECT @@SERVERNAME
