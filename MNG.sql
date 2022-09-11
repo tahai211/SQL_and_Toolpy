@@ -54,5 +54,3 @@ SELECT * FROM ppoint
 DROP TABLE ppoint
 
 
-SELECT * FROM student
-SELECT @@SERVERNAME
